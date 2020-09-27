@@ -1,5 +1,5 @@
-# Les 2 Souchets Theme
-Source code for les2souchets.be website
+# Bundle WP Theme
+The is the source code for a theme for WP which uses WebPack
 
 `$ npm install`
 
