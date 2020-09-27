@@ -1,0 +1,65 @@
+p {
+    margin-bottom: $gutter !important;
+    max-width: 65ch;
+}
+
+/* ===== MIXINS ===== */
+@mixin header-1 {
+    font-size: 3rem !important; /* 48/16 */
+    line-height: 1;
+    margin: 0 0 $gutter 0;
+    color: $primary;
+
+    @include medium-screen {
+        font-size: 3.75rem !important; /* 60/16 */
+    }
+}
+@mixin header-2 {
+    font-size: 2.25rem !important; /* 36/16 */
+    line-height: 1.1;
+    margin: 0 0 $gutter 0;
+
+    @include medium-screen {
+        font-size: 3rem !important; /* 48/16 */
+        margin-bottom: $gutter*2;
+    }
+}
+@mixin header-3 {
+    font-size: 1.5rem !important; /* 24/16 */
+    line-height: 1.4;
+    margin: 0 0 $gutter 0;
+
+    @include medium-screen {
+        margin-bottom: $gutter*2;
+    }
+}
+@mixin body {
+    font-size: 1rem !important;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+
+    @include medium-screen {
+        font-size: 1.125rem !important; /* 18/16 */
+    }
+}
+@mixin small-text {
+    font-size: 0.875rem !important; /* 14/16 */
+    line-height: 1.1;
+    margin: 0;
+
+    @include medium-screen {
+        font-size: 1rem !important;
+    }
+}
+@mixin footer-text {
+    font-size: 0.75rem !important; /* 12/16 */
+    line-height: 1.5;
+    margin: 0;
+
+    @include medium-screen {
+        font-size: 0.875rem !important; /* 14/16 */
+    }
+}
+
+/* Settings of general typography have to be
+ * done in the parameters of the theme Neve */

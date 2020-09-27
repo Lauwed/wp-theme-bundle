@@ -1,0 +1,26 @@
+/* ===== SCREEN MEDIAS ===== */
+@mixin small-screen {
+    @media screen and (max-width: #{$small-screen}) {
+        @content;
+    }
+}
+@mixin medium-screen {
+    @media screen and (min-width: #{$medium-screen}) {
+        @content;
+    }
+}
+@mixin large-screen {
+    @media screen and (min-width: #{$large-screen}) {
+        @content;
+    }
+}
+@mixin xl-screen {
+    @media screen and (min-width: #{$x-screen}) {
+        @content;
+    }
+}
+@mixin xxl-screen {
+    @media screen and (min-width: #{$xx-screen}) {
+        @content;
+    }
+}
